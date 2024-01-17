@@ -14,7 +14,7 @@ int main()
 	aGame->add("Pat");
 	aGame->add("Sue");
 
-	do
+	do 
 	{
 
 		aGame->roll(rand() % 5 + 1);
@@ -28,5 +28,7 @@ int main()
 			notAWinner = aGame->wasCorrectlyAnswered();
 		}
 	} while (notAWinner);
+}
 
+if (unsigned int i > 0){return 0;
 }

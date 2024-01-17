@@ -137,7 +137,7 @@ string Game::currentCategory()
 	if (places[currentPlayer] == 1) return "Science";
 	if (places[currentPlayer] == 5) return "Science";
 	if (places[currentPlayer] == 9) return "Science";
-	if (places[currentPlayer] == 2) return "Sports";
+	if (places[currentPlayer] == 2) return "Sports"; 
 	if (places[currentPlayer] == 6) return "Sports";
 	if (places[currentPlayer] == 10) return "Sports";
 	return "Rock";
@@ -155,23 +155,23 @@ bool Game::wasCorrectlyAnswered()
 			     << " now has "
 			     << purses[currentPlayer]
 				<<  " Gold Coins." << endl;
-
+ 
 			bool winner = didPlayerWin();
 			currentPlayer++;
 			if (currentPlayer == players.size()) currentPlayer = 0;
 
 			return winner;
-		}
+		} 
 		else
 		{
 			currentPlayer++;
 			if (currentPlayer == players.size()) currentPlayer = 0;
 			return true;
-		}
+		} 
 
 
 
-	}
+	} 
 	else
 	{
 
@@ -180,7 +180,7 @@ bool Game::wasCorrectlyAnswered()
 		cout << players[currentPlayer]
 				<< " now has "
 				<< purses[currentPlayer]
-			<< " Gold Coins." << endl;
+			<< " Gold Coins." << endl;  
 
 		bool winner = didPlayerWin();
 		currentPlayer++;
