@@ -2,6 +2,16 @@
 #include <string>
 #include <vector>
 
+enum class Category {
+    Pop,
+    Science,
+    Sports,
+    Rock,
+
+    COUNT, //must be last
+    
+}; 
+
 class Game {
 private:
     std::vector<std::string> players{};
@@ -17,13 +27,13 @@ private:
     std::vector<std::string> rockQuestions{};
 
     unsigned int currentPlayer{0};
-    bool         isGettingOutOfPenaltyBox{};
+    bool isGettingOutOfPenaltyBox{};
 
 public:
     Game();
     std::string createRockQuestion(int index);
-    bool        isPlayable();
-    bool        add(const std::string& playerName);
+    bool isPlayable();
+    bool add(const std::string& playerName);
 
     size_t howManyPlayers();
     void   roll(int roll);
@@ -32,7 +42,7 @@ public:
     bool wrongAnswer();
 
 private:
-    void        askQuestion();
+    void askQuestion();
     std::string currentCategory();
 
     bool didPlayerWin();
