@@ -154,7 +154,7 @@ bool Game::wasCorrectlyAnswered()
 			cout << players[currentPlayer]
 			     << " now has "
 			     << purses[currentPlayer]
-				<<  " Gold Coins." << endl;
+				 <<  " Gold Coins." << endl;
  
 			bool winner = didPlayerWin();
 			currentPlayer++;
@@ -200,7 +200,6 @@ bool Game::wrongAnswer()
 	if (currentPlayer == players.size()) currentPlayer = 0;
 	return true;
 }
-
 
 bool Game::didPlayerWin()
 {

@@ -11,7 +11,7 @@ int main()
 	Game* aGame = new Game();
 
 	aGame->add("Chet");
-	aGame->add("Pat");
+	aGame->add("Pat");	
 	aGame->add("Sue");
 
 	do 
@@ -30,5 +30,3 @@ int main()
 	} while (notAWinner);
 }
 
-if (unsigned int i > 0){return 0;
-}
